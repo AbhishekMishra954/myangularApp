@@ -1,0 +1,15 @@
+<p [className]="cls">employee works!</p>
+<button (click)="ClickEvent('clicked')">Click Here</button>
+
+<input type="text" #Nametxt value="abhishek" (keyup)="OnKeyUpFunction(Nametxt.value)" >
+
+<ul *ngFor="let item of fruits">
+    <li>{{item}}</li>
+</ul>
+
+<!-- <app-employee-list [myData]="name"></app-employee-list> -->
+<app-employee-list (childEvent)="msg=$event"></app-employee-list>
+<!-- <app-employee-list [myNameData]="myName"></app-employee-list> -->
+<h2>{{msg}}</h2>
+
+

@@ -1,0 +1,20 @@
+<p>employee-list works!</p>
+
+<button (click)="EventFire()">EventButton</button>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+
+    <tr (click)="StudentClick(stu)" [class.active]="true" *ngFor="let stu of students">
+        <td>{{stu.Id}}</td>
+        <td>{{stu.Name}}</td>
+        <td>{{stu.Age}}</td>
+
+    </tr>
+</table>
+
+{{myParentToChildTest}}

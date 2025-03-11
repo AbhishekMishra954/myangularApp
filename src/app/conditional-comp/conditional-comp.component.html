@@ -1,0 +1,17 @@
+<p>conditional-comp works!</p>
+
+<div *ngIf="(2>4);then elsePart;else elsePart2; ">
+    <h1>Hello if</h1>
+</div>
+
+<ng-template #elsePart>
+    <div>
+        <h2>Else part</h2>
+    </div>
+</ng-template>
+
+<ng-template #elsePart2>
+    <div>
+        <h2>Else part2</h2>
+    </div>
+</ng-template>
